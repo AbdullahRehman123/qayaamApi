@@ -52,6 +52,7 @@ INSTALLED_APPS = [
     'listingsFeedback',
     'djoser',
     'whitenoise.runserver_nostatic',
+    'drf_yasg'
 ]
 
 MIDDLEWARE = [

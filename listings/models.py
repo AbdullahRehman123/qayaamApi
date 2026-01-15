@@ -43,8 +43,7 @@ class Listing(models.Model):
         return self.title
     
     def save(self, *args, **kwargs):
-        realtor = get_object_or_404(Account, user_id=self.realtor_id.user_id)
+        realtor = get_object_or_404(Account, user_id=self.realtor_id)
         if realtor.user_type != 'Realtor':
             raise ValueError('selected user must be realtor')
         super().save(*args, **kwargs)
-    

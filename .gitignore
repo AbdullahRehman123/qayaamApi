@@ -4,4 +4,10 @@
 __pycache__/
 local_settings.py
 db.sqlite3
-venv/
+env/
+.env
+.env.*
+!/.env.example
+listings/migrations/
+media/photos/
+photos/
